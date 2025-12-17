@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoogle</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+    }
+    .container {
+      text-align: center;
+      width: 100%;
+    }
+    .logo img {
+      max-width: 500px;
+      width: 90%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+    .search {
+      margin: auto;
+      width: 90%;
+      max-width: 600px;
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      border: 1px solid #dcdcdc;
+      padding: 10px 15px;
+    }
+    .search input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+    .search button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .search svg {
+      width: 22px;
+      height: 22px;
+      fill: #1a73e8; /* lupa azul */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://image2url.com/images/176595183482-0e9f7ed3-02ae-486d-8226-40da0013ccbd.png" alt="Yoogle">
+    </div>
+
+    <form action="https://www.google.com/search" method="get">
+      <div class="search">
+        <input type="text" name="q" placeholder="Pesquisar no Yoogle" required>
+        <button type="submit" aria-label="Pesquisar">
+          <svg viewBox="0 0 24 24">
+            <path d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.7.7l.3.3v.8L20 21.5 21.5 20l-6-6z"/>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
